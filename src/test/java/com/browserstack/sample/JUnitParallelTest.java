@@ -1,6 +1,6 @@
 package com.browserstack.sample;
 
-import com.browserstack.runner.Parallelized;
+import com.browserstack.sample.runner.Parallelized;
 import io.undertow.Undertow;
 import org.junit.After;
 import org.junit.Before;
