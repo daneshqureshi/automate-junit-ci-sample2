@@ -28,8 +28,8 @@ public class JUnitTest {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browser", "firefox");
-        capabilities.setCapability("os", "OS X");
-        capabilities.setCapability("os_version", "El Capitan");
+        capabilities.setCapability("os", "Windows");
+        capabilities.setCapability("os_version", "7");
         capabilities.setCapability("browserstack.local", System.getenv("BROWSERSTACK_LOCAL"));
         capabilities.setCapability("browserstack.localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
 

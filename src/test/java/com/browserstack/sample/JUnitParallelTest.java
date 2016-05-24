@@ -93,8 +93,8 @@ public class JUnitParallelTest {
         LinkedList<String[]> env = new LinkedList<String[]>();
         env.add(new String[]{"chrome", "49", "Windows", "7"});
         env.add(new String[]{"firefox", "46", "Windows", "8"});
+        env.add(new String[]{"ie", "10", "Windows", "7"});
         env.add(new String[]{"ie", "11", "Windows", "10"});
-        env.add(new String[]{"safari", "9.1", "OS X", "El Capitan"});
         return env;
     }
 }
