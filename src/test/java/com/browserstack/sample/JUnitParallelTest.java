@@ -22,7 +22,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parallelized.class)
 public class JUnitParallelTest {
-    private static AtomicInteger NEXT_PORT = new AtomicInteger(8080);
+    private static AtomicInteger NEXT_PORT = new AtomicInteger(SampleServer.PORT);
 
     private String browserName;
     private String browserVersion;

@@ -7,6 +7,8 @@ import io.undertow.util.Headers;
 
 public class SampleServer {
 
+    public static final int PORT = Integer.parseInt(System.getProperty("port", "8080"));
+
     public static Undertow newServer(String host, int port) {
         return Undertow.builder()
                 .addHttpListener(port, host)
@@ -24,6 +26,6 @@ public class SampleServer {
     }
 
     public static void main(String[] args) {
-        newServer("localhost", 8080).start();
+        newServer("localhost", PORT).start();
     }
 }

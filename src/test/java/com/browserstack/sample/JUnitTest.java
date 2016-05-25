@@ -15,7 +15,7 @@ import java.net.URL;
 import static org.junit.Assert.assertEquals;
 
 public class JUnitTest {
-    private static final int PORT = 8080;
+    private static final int PORT = SampleServer.PORT;
 
     private Undertow webServer;
     private WebDriver driver;
