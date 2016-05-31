@@ -30,7 +30,7 @@
             <plugin>
                 <groupId>com.browserstack</groupId>
                 <artifactId>automate-maven-plugin</artifactId>
-                <version>0.2-SNAPSHOT</version>
+                <version>0.3-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <goals>
@@ -68,13 +68,8 @@
         <!-- BrowserStack Automate -->
         <dependency>
             <groupId>com.browserstack</groupId>
-            <artifactId>automate-maven-plugin</artifactId>
-            <version>0.2-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-            <version>1.7.4</version>
+            <artifactId>automate-testassist</artifactId>
+            <version>0.3-SNAPSHOT</version>
         </dependency>
         <!-- /BrowserStack Automate -->
     </dependencies>
