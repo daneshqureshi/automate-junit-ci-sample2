@@ -75,6 +75,10 @@ public class JUnitParallelTest {
 
         WebElement element = driver.findElement(By.tagName("h1"));
         assertEquals("Test Page", element.getText());
+
+        if (browserName.equals("ie") && browserVersion.equals("11")) {
+            assertEquals("Failure", 1, 2);
+        }
     }
 
     @After
