@@ -63,7 +63,7 @@ public class JUnitParallelTest {
         String accessKey = System.getenv("BROWSERSTACK_ACCESSKEY");
 
         driver = new RemoteWebDriver(
-                new URL(String.format("https://%s:%s@hub.browserstack.com/wd/hub", username, accessKey)), capabilities);
+                new URL(String.format("https://%s:%s@hub-cloud.browserstack.com/wd/hub", username, accessKey)), capabilities);
     }
 
     @Test
