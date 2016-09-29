@@ -36,8 +36,8 @@ public class JUnitTest {
         capabilities.setCapability("build", "Sample JUnit Tests");
         capabilities.setCapability("name", "Sample JUnit Local Tests");
 
-        String username = System.getenv("BROWSERSTACK_USER");
-        String accessKey = System.getenv("BROWSERSTACK_ACCESSKEY");
+        String username = System.getenv("BROWSERSTACK_USERNAME");
+        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
 
         driver = new RemoteWebDriver(
                 new URL(String.format("https://%s:%s@hub-cloud.browserstack.com/wd/hub", username, accessKey)), capabilities);
