@@ -7,7 +7,7 @@ import io.undertow.util.Headers;
 
 public class SampleServer {
 
-    public static final int PORT = Integer.parseInt(System.getProperty("port", "8080"));
+    public static final int PORT = Integer.parseInt(System.getProperty("port", "5000"));
 
     public static Undertow newServer(String host, int port) {
         return Undertow.builder()
