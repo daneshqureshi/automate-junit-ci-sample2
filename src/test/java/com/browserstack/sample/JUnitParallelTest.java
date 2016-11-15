@@ -59,7 +59,7 @@ public class JUnitParallelTest {
         capabilities.setCapability("build", "Sample JUnit Tests");
         capabilities.setCapability("name", "Sample JUnit Parallel Tests");
 
-        String username = System.getenv("BROWSERSTACK_USERNAME");
+        String username = System.getenv("BROWSERSTACK_USER");
         String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
 
         driver = new RemoteWebDriver(
