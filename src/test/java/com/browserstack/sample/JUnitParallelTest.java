@@ -77,7 +77,7 @@ public class JUnitParallelTest {
         assertEquals("Test Page", element.getText());
 
         if (browserName.equals("ie") && browserVersion.equals("11")) {
-            assertEquals("Failure", 1, 2);
+            assertEquals("Failure", 1, 1);
         }
     }
 
