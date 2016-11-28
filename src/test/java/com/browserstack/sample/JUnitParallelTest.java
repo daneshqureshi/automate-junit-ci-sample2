@@ -44,10 +44,6 @@ public class JUnitParallelTest {
     public void setUp() throws Exception {
         port = NEXT_PORT.incrementAndGet();
 
-        System.out.println("Starting server on port: " + port);
-        webServer = SampleServer.newServer("localhost", port);
-        webServer.start();
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browser", browserName);
         capabilities.setCapability("browser_version", browserVersion);
@@ -68,17 +64,10 @@ public class JUnitParallelTest {
 
     @Test
     public void testSimple() throws Exception {
-        driver.get("http://localhost:" + port);
+        driver.get("http://www.browserstack.com");
         String title = driver.getTitle();
         System.out.println("Page title is: " + title);
-        assertEquals("BrowserStack", title);
-
-        WebElement element = driver.findElement(By.tagName("h1"));
-        assertEquals("Test Page", element.getText());
-
-        if (browserName.equals("ie") && browserVersion.equals("11")) {
-            assertEquals("Failure", 1, 1);
-        }
+        assertEquals("Cross Browser Testing Tool. 1000+ Browsers, Mobile, Real IE.", title);
     }
 
     @After

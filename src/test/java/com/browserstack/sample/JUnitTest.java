@@ -22,9 +22,6 @@ public class JUnitTest {
 
     @Before
     public void setUp() throws Exception {
-        System.out.println("Starting server on port: " + PORT);
-        webServer = SampleServer.newServer("localhost", PORT);
-        webServer.start();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browser", "firefox");
@@ -45,13 +42,13 @@ public class JUnitTest {
 
     @Test
     public void testSimple() throws Exception {
-        driver.get("http://localhost:" + PORT);
+        driver.get("http://www.browserstack.com");
         String title = driver.getTitle();
         System.out.println("Page title is: " + title);
-        assertEquals("BrowserStack", title);
+        assertEquals("Cross Browser Testing Tool. 1000+ Browsers, Mobile, Real IE.", title);
 
-        WebElement element = driver.findElement(By.tagName("h1"));
-        assertEquals("Test Page", element.getText());
+        // WebElement element = driver.findElement(By.tagName("h1"));
+        // assertEquals("Test Page", element.getText());
     }
 
     @After
