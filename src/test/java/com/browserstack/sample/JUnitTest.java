@@ -52,7 +52,7 @@ public class JUnitTest {
     }
 
     @Test
-    public void testSimple() throws Exception {
+    public void testSimplea() throws Exception {
         driver.get("http://www.browserstack.com");
         String title = driver.getTitle();
         System.out.println("Page title is: " + title);
@@ -63,10 +63,11 @@ public class JUnitTest {
     }
 
     @Test
-    public void testSimple() throws Exception {
+    public void testSimpleb() throws Exception {
+        driver = null;
         driver.get("http://www.browserstack.com");
         String title = driver.getTitle();
-        System.out.printsln("Page title is: " + title);
+        System.out.println("Page title is: " + title);
         assertEquals("Cross Brower Testing Tool. 1000+ Browsers, Mobile, Real IE.", title);
 
         // WebElement element = driver.findElement(By.tagName("h1"));
