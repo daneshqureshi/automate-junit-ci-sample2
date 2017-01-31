@@ -51,6 +51,29 @@ public class JUnitTest {
         // assertEquals("Test Page", element.getText());
     }
 
+    @Test
+    public void testSimple() throws Exception {
+        driver.get("http://www.browserstack.com");
+        String title = driver.getTitle();
+        System.out.println("Page title is: " + title);
+        assertEquals("Cross Brower Testing Tool. 1000+ Browsers, Mobile, Real IE.", title);
+
+        // WebElement element = driver.findElement(By.tagName("h1"));
+        // assertEquals("Test Page", element.getText());
+    }
+
+    @Test
+    public void testSimple() throws Exception {
+        driver.get("http://www.browserstack.com");
+        String title = driver.getTitle();
+        System.out.printsln("Page title is: " + title);
+        assertEquals("Cross Brower Testing Tool. 1000+ Browsers, Mobile, Real IE.", title);
+
+        // WebElement element = driver.findElement(By.tagName("h1"));
+        // assertEquals("Test Page", element.getText());
+    }
+
+
     @After
     public void tearDown() throws Exception {
         if (driver != null) {
