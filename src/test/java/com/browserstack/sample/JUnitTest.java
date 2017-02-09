@@ -36,6 +36,8 @@ public class JUnitTest {
         String username = System.getenv("BROWSERSTACK_USERNAME");
         String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
 
+        System.out.println(String.format("https://%s:%s@hub-cloud.browserstack.com/wd/hub", username, accessKey));
+        
         driver = new RemoteWebDriver(
                 new URL(String.format("https://%s:%s@hub-cloud.browserstack.com/wd/hub", username, accessKey)), capabilities);
     }
