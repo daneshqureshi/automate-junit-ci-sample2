@@ -54,6 +54,17 @@ public class JUnitTest {
     }
 
     @Test
+    public void testGoogle() throws Exception {
+        driver.get("http://www.google.com");
+        String title = driver.getTitle();
+        System.out.println("Page title is: " + title);
+        assertEquals("Google", title);
+
+        // WebElement element = driver.findElement(By.tagName("h1"));
+        // assertEquals("Test Page", element.getText());
+    }
+
+    @Test
     public void testSimplea() throws Exception {
         driver.get("http://www.browserstack.com");
         String title = driver.getTitle();
